@@ -1,11 +1,14 @@
 """ What??? """
+from trace import Trace
 
 
-def main(work: bool | None = False) -> str:
+def main(eval_: str = '0', work: bool = False) -> str:
+    """ % """
+
     if work:
-        return 'y'
-    return 'n'
+        return eval(eval_)
+    return '?'
 
 
 if __name__ == '__main__':
-    print(f'result: {main(True)}')
+    print(f'result: {main("2**5", True)}')
