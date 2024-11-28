@@ -1,5 +1,4 @@
 """ What??? """
-from trace import Trace
 
 
 def main(eval_: str = '0', work: bool = False) -> str:
