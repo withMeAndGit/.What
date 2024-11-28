@@ -1,9 +1,11 @@
 """ What??? """
 
 
-def main() -> None:
-    print('WHAT')
+def main(work: bool | None = False) -> str:
+    if work:
+        return 'y'
+    return 'n'
 
 
 if __name__ == '__main__':
-    main()
+    print(f'result: {main(True)}')
